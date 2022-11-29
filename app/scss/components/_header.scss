@@ -1,0 +1,14 @@
+@use '../utilities/' as *;
+
+.header {
+  margin-bottom: rem(65);
+
+  .logo {
+    max-width: rem(150);
+
+    & img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

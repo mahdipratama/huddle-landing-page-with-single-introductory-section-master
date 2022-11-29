@@ -1,2 +1,13 @@
 @use '../utilities/' as *;
- 
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  justify-content: center;
+
+  padding: rem(24) rem(35);
+}
+
+.container {
+  max-width: rem(600);
+}

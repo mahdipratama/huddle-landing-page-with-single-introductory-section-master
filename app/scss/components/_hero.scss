@@ -1,0 +1,33 @@
+@use '../utilities/' as *;
+
+.hero {
+  text-align: center;
+
+  &__img {
+    width: 100%;
+    margin-bottom: rem(60);
+  }
+
+  &__description {
+    & h1 {
+      font-family: var(--accent-font);
+      font-size: rem(24);
+      font-weight: 600;
+    }
+
+    & p {
+      font-weight: 400;
+    }
+  }
+
+  &__cta {
+    margin: 0 auto;
+    max-width: rem(300);
+    display: flex;
+    align-items: center;
+    & button {
+      width: 100%;
+      padding: rem(14) rem(75);
+    }
+  }
+}
