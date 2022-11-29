@@ -81,6 +81,9 @@ a:active {
   width: 100%;
   margin-bottom: 3.75rem;
 }
+.hero__description {
+  margin-bottom: 1.5rem;
+}
 .hero__description h1 {
   font-family: var(--accent-font);
   font-size: 1.5rem;
@@ -90,27 +93,47 @@ a:active {
   font-weight: 400;
 }
 .hero__cta {
-  margin: 0 auto;
-  max-width: 18.75rem;
-  display: flex;
-  align-items: center;
+  margin-inline: auto;
+  max-width: 12.5rem;
+  margin-bottom: 3.75rem;
 }
 .hero__cta button {
+  font-family: var(--accent-font);
+  font-size: 0.875rem;
+  color: var(--main-bg);
   width: 100%;
   padding: 0.875rem 4.6875rem;
+  border-radius: 11.25rem;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.608) 0px 8px 11px -7px;
+  transition: all 150ms ease-in;
+}
+.hero__cta button:hover, .hero__cta button:focus, .hero__cta button:active {
+  cursor: pointer;
+  background-color: var(--hover-bg);
+  color: white;
+  transform: translateY(-5px);
 }
 
 .footer {
-  justify-self: center;
+  display: flex;
+  justify-content: center;
+  gap: 0.625rem;
 }
 .footer__icon {
-  width: 3.125rem;
-  height: 3.125rem;
+  width: 1.75rem;
+  height: 1.75rem;
   border-radius: 50%;
-  border: 2px solid white;
+  border: 1px solid white;
   color: white;
   text-decoration: none;
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  transition: all 150ms ease-in;
+}
+.footer__icon:hover, .footer__icon:focus, .footer__icon:active {
+  cursor: pointer;
+  border: solid 1px var(--hover-bg);
+  color: var(--hover-bg);
 }/*# sourceMappingURL=style.css.map */

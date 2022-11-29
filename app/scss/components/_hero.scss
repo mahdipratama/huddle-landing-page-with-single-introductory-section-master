@@ -9,6 +9,8 @@
   }
 
   &__description {
+    margin-bottom: rem(24);
+
     & h1 {
       font-family: var(--accent-font);
       font-size: rem(24);
@@ -21,13 +23,30 @@
   }
 
   &__cta {
-    margin: 0 auto;
-    max-width: rem(300);
-    display: flex;
-    align-items: center;
+    margin-inline: auto;
+    max-width: rem(200);
+    margin-bottom: rem(60);
+
     & button {
+      font-family: var(--accent-font);
+      font-size: rem(14);
+      color: var(--main-bg);
       width: 100%;
       padding: rem(14) rem(75);
+      border-radius: rem(180);
+      border: none;
+      box-shadow: rgba(0, 0, 0, 0.608) 0px 8px 11px -7px;
+      transition: all 150ms ease-in;
+
+      &:hover,
+      &:focus,
+      &:active {
+        cursor: pointer;
+        background-color: var(--hover-bg);
+        color: white;
+
+        transform: translateY(-5px);
+      }
     }
   }
 }

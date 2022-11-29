@@ -1,16 +1,27 @@
 @use '../utilities/' as *;
 .footer {
-  justify-self: center;
+  display: flex;
+  justify-content: center;
+  gap: rem(10);
 
   &__icon {
-    width: rem(50);
-    height: rem(50);
+    width: rem(28);
+    height: rem(28);
     border-radius: 50%;
-    border: 2px solid white;
+    border: 1px solid white;
     color: white;
     text-decoration: none;
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    transition: all 150ms ease-in;
+
+    &:hover,
+    &:focus,
+    &:active {
+      cursor: pointer;
+      border: solid 1px var(--hover-bg);
+      color: var(--hover-bg);
+    }
   }
 }
