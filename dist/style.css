@@ -55,9 +55,9 @@ body {
 }
 @media (min-width: 62.5rem) {
   .container {
-    max-width: 81.25rem;
+    max-width: 90rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 28rem;
     gap: 3.4375rem;
   }
 }

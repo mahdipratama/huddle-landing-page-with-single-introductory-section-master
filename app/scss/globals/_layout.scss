@@ -16,9 +16,9 @@ body {
   max-width: rem(600);
 
   @include breakpoint-up(large) {
-    max-width: rem(1300);
+    max-width: rem(1440);
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 28rem;
     gap: rem(55);
   }
 }
