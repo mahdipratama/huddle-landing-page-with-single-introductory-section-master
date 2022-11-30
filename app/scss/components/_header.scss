@@ -11,4 +11,14 @@
       height: auto;
     }
   }
+
+  @include breakpoint-up(medium) {
+    .logo {
+      max-width: rem(207);
+    }
+  }
+
+  @include breakpoint-up(large) {
+    margin-bottom: rem(63);
+  }
 }

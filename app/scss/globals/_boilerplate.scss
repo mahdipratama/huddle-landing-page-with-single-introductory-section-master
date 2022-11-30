@@ -21,4 +21,11 @@ body {
   background-size: contain;
 
   color: var(--text-color);
+
+  @include breakpoint-up(large) {
+    background-image: url('/images/bg-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
 }

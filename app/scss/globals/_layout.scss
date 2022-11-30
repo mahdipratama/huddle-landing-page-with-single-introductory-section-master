@@ -6,8 +6,19 @@ body {
   justify-content: center;
 
   padding: rem(24) rem(35);
+
+  @include breakpoint-up(large) {
+    padding: rem(58) rem(72);
+  }
 }
 
 .container {
   max-width: rem(600);
+
+  @include breakpoint-up(large) {
+    max-width: rem(1300);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: rem(55);
+  }
 }

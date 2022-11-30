@@ -49,4 +49,43 @@
       }
     }
   }
+
+  @include breakpoint-up(medium) {
+    &__cta {
+      max-width: rem(300);
+    }
+  }
+
+  @include breakpoint-up(large) {
+    text-align: left;
+
+    &__description {
+      margin-bottom: 0;
+
+      & h1 {
+        font-size: rem(40);
+        margin-bottom: rem(35);
+      }
+
+      & p {
+        font-size: rem(18);
+        margin-bottom: rem(20);
+      }
+    }
+
+    &__img {
+      margin: 0;
+    }
+
+    &__cta {
+      max-width: rem(200);
+      height: rem(56);
+      margin: 0;
+
+      & button {
+        padding: rem(13) rem(65);
+        font-size: rem(18);
+      }
+    }
+  }
 }

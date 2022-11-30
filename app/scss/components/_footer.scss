@@ -24,4 +24,13 @@
       color: var(--hover-bg);
     }
   }
+
+  @include breakpoint-up(large) {
+    margin-left: auto;
+
+    &__icon {
+      width: rem(41);
+      height: rem(41);
+    }
+  }
 }
