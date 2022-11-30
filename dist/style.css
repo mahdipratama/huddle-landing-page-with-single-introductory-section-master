@@ -19,12 +19,10 @@ body {
   background-size: contain;
   color: var(--text-color);
 }
-@media (min-width: 56.25rem) {
+@media (min-width: 62.5rem) {
   body {
     background-image: url("/images/bg-desktop.svg");
     background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
   }
 }
 
@@ -46,7 +44,7 @@ body {
   justify-content: center;
   padding: 1.5rem 2.1875rem;
 }
-@media (min-width: 56.25rem) {
+@media (min-width: 62.5rem) {
   body {
     padding: 3.625rem 4.5rem;
   }
@@ -55,7 +53,7 @@ body {
 .container {
   max-width: 37.5rem;
 }
-@media (min-width: 56.25rem) {
+@media (min-width: 62.5rem) {
   .container {
     max-width: 81.25rem;
     display: grid;
@@ -99,7 +97,7 @@ a:active {
     max-width: 12.9375rem;
   }
 }
-@media (min-width: 56.25rem) {
+@media (min-width: 62.5rem) {
   .header {
     margin-bottom: 3.9375rem;
   }
@@ -150,12 +148,17 @@ a:active {
     max-width: 18.75rem;
   }
 }
-@media (min-width: 56.25rem) {
+@media (min-width: 62.5rem) {
   .hero {
     text-align: left;
   }
+  .hero__img {
+    grid-row: span 2;
+  }
   .hero__description {
+    margin-top: 2.1875rem;
     margin-bottom: 0;
+    align-self: center;
   }
   .hero__description h1 {
     font-size: 2.5rem;
@@ -201,7 +204,7 @@ a:active {
   border: solid 1px var(--hover-bg);
   color: var(--hover-bg);
 }
-@media (min-width: 56.25rem) {
+@media (min-width: 62.5rem) {
   .footer {
     margin-left: auto;
   }

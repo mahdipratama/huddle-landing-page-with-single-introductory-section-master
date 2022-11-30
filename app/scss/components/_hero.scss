@@ -59,8 +59,14 @@
   @include breakpoint-up(large) {
     text-align: left;
 
+    &__img {
+      grid-row: span 2;
+    }
+
     &__description {
+      margin-top: rem(35);
       margin-bottom: 0;
+      align-self: center;
 
       & h1 {
         font-size: rem(40);
